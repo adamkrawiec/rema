@@ -1,0 +1,6 @@
+[Bb]in/
+[Oo]bj/
+
+# Generated files
+project.lock.json
+.vs/

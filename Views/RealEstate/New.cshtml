@@ -1,0 +1,18 @@
+@model rema.Models.RealEstate
+
+<h1>Add new real estate</h1>
+
+<div class="row">
+  <div class="col-md-10">
+    <form asp-action="Create">
+      <div class="form-group">
+          <label asp-for="Name"></label>
+          <input asp-for="Name" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+      </div>
+  </form>
+  </div>
+</div>

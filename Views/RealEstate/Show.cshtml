@@ -1,0 +1,14 @@
+<h1>@Model.Name</h1>
+
+<table>
+  <tbody>
+    @foreach (var estateUnit in Model.EstateUnits)
+    {
+        <tr>
+          <td>
+            @estateUnit.Name
+          </td>
+        </tr>
+    }
+  </tbody>
+</table>

@@ -1,0 +1,22 @@
+@model IEnumerable<rema.Models.RealEstate>
+
+<h1>Real Estates:</h1>
+
+<p>
+    <a asp-action="New">Create New Real Estate</a>
+</p>
+
+<table>
+  <tbody>
+    @foreach (var realEstate in Model)
+    {
+        <tr>
+          <td>
+            <a asp-action="show" asp-route-id="@realEstate.Id">
+              @realEstate.Name
+            </a>
+          </td>
+        </tr>
+    }
+  </tbody>
+</table>
