@@ -1,0 +1,15 @@
+@model IEnumerable<rema.Models.EstateUnit>
+
+<h1>Estate Units:</h1>
+<table>
+  <tbody>
+    @foreach (var estateUnit in Model)
+    {
+        <tr>
+          <td>
+            @estateUnit.Name
+          </td>
+        </tr>
+    }
+  </tbody>
+</table>

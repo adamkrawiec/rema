@@ -1,17 +1,10 @@
+@model rema.Models.RealEstate
+
 <h1>@Model.Name</h1>
 
 <p>
-  <a asp-controller="EstateUnit" asp-action="New">Add Estate Unit</a>
+  <a asp-controller="EstateUnit" asp-action="New" asp-route-RealEstateId="@Model.Id">Add Estate Unit</a>
 </p>
-<table>
-  <tbody>
-    @foreach (var estateUnit in Model.EstateUnits)
-    {
-        <tr>
-          <td>
-            @estateUnit.Name
-          </td>
-        </tr>
-    }
-  </tbody>
-</table>
+<p>
+  <a asp-controller="EstateUnit" asp-action="Index" asp-route-RealEstateId="@Model.Id">Show Estate Units</a>
+</p>

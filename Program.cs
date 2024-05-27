@@ -37,12 +37,14 @@ app.UseRouting();
 app.UseHttpLogging();
 app.UseAuthorization();
 
-// app.MapControllerRoute(
-//     name: "nestedRealEstates",
-//     pattern: "real-estates/{realEstateId}/{controller=EstateUnit}/{action=Index}/{estateUnitId?}"
-// );
+app.MapControllerRoute(
+    name: "nestedRealEstates",
+    pattern: "real-estates/{realEstateId}/{controller=EstateUnit}/{action=Index}/{estateUnitId?}"
+);
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();
+
+public partial class Program { }
